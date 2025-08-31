@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovmatch - Личный кабинет</title>
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <input type="checkbox" id="nav-toggle" class="nav__checkbox">
+        
+        <div class="container">
+            <nav class="nav">
+
+                <a href="/index.html" class="nav__logo">
+                    <img src="images/svg/main_icon.svg" alt="Sovmatch" class="nav__logo-icon">
+                </a>
+
+
+                <ul class="nav__menu">
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/about.html">О преподавателе</a></li>
+                    <li><a href="/constructor.html">Конструктор вариантов</a></li>
+                    <li><a href="/account.html">Акаунт</a></li>
+                    <li><a href="/reviews.html">Отзывы</a></li>
+                </ul>
+
+
+                <div class="nav__btn-block">
+                    <button class="nav__btn nav__btn--login">Вход</button>
+                    <button class="nav__btn nav__btn--registration">Регистрация</button>
+                </div>
+
+
+                <label for="nav-toggle" class="nav__burger">
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                </label>
+            </nav>
+        </div>
+
+        <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/about.html">О преподавателе</a></li>
+                <li><a href="/constructor.html">Конструктор вариантов</a></li>
+                <li><a href="/account.html">Контакты</a></li>
+                <li><a href="/reviews.html">Отзывы</a></li>
+            </ul>
+            <div class="mobile-menu__buttons">
+                <button class="nav__btn nav__btn--login">Вход</button>
+                <button class="nav__btn nav__btn--registration">Регистрация</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="account" class="account">
+    <!-- Слой 1 Фон с переопределенным градиентом -->
+    <div class="account__bg"></div>
+    
+    <!-- Слой 3 Контент -->
+    <div class="account_container">
+        <h1 class="account__main-title">Личные данные</h1>
+        
+        <div class="account__content">
+            <div class="account__info-blocks">
+                <div class="account__info-left">
+                    <div class="account__info-item">
+                        <span class="account__info-label">Email:</span>
+                        <span class="account__info-value">example@mail.ru</span>
+                    </div>
+                    <div class="account__info-item">
+                        <span class="account__info-label">Имя:</span>
+                        <span class="account__info-value">Иван Иванов</span>
+                    </div>
+                    <div class="account__info-item">
+                        <span class="account__info-label">Телефон:</span>
+                        <span class="account__info-value">+7 (999) 123-45-67</span>
+                    </div>
+                    <div class="account__info-item">
+                        <span class="account__info-label">Город:</span>
+                        <span class="account__info-value">Москва</span>
+                    </div>
+                    <div class="account__info-item">
+                        <span class="account__info-label">Школа:</span>
+                        <span class="account__info-value">Гимназия №1</span>
+                    </div>
+                </div>
+                
+                <div class="account__info-right">
+                    <h3 class="account__subscription-title">Подписка</h3>
+                    <div class="account__subscription-status">
+                        Статус: <span>Бесплатная</span>
+                    </div>
+                    <button class="account__subscribe-btn">Оплатить</button>
+                </div>
+            </div>
+            
+            <div class="account__history-block">
+                <h2 class="account__history-title">История заданий</h2>
+                
+                <div class="account__table-container">
+                    <table class="account__history-table">
+                        <thead>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Ссылка</th>
+                                <th>Задач в варианте</th>
+                                <th>Результат</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12.01.2024</td>
+                                <td><a href="#" class="account__table-link">Вариант №1</a></td>
+                                <td>5</td>
+                                <td>4/5</td>
+                            </tr>
+                            <tr>
+                                <td>10.01.2024</td>
+                                <td><a href="#" class="account__table-link">Вариант №2</a></td>
+                                <td>7</td>
+                                <td>6/7</td>
+                            </tr>
+                            <tr>
+                                <td>08.01.2024</td>
+                                <td><a href="#" class="account__table-link">Вариант №3</a></td>
+                                <td>6</td>
+                                <td>5/6</td>
+                            </tr>
+                            <tr>
+                                <td>05.01.2024</td>
+                                <td><a href="#" class="account__table-link">Вариант №4</a></td>
+                                <td>8</td>
+                                <td>7/8</td>
+                            </tr>
+                            <tr>
+                                <td>03.01.2024</td>
+                                <td><a href="#" class="account__table-link">Вариант №5</a></td>
+                                <td>5</td>
+                                <td>4/5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+$constructor-gradient: linear-gradient(135deg, #3770FE 0%, #2963EB 50%, #225BD6 75%, #154FC4 100%);
+$text-dark: #04051F;
+$white: #ffffff;
+$primary-color: #2849F3;
+
+$breakpoint-lg: 1200px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 480px;
+
+.constructor {
+    position: relative;
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    overflow: hidden;
+
+    // Слой 1 Фон с переопределенным градиентом
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $constructor-gradient;
+        z-index: 1;
+    }
+
+    &_container {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        padding: 260px 100px;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $breakpoint-lg) {
+            padding: 200px 60px;
+        }
+
+        @media (max-width: $breakpoint-md) {
+            padding: 150px 40px;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            padding: 100px 20px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        width: 100%;
+
+        @media (max-width: $breakpoint-md) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    &__left {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media (max-width: $breakpoint-md) {
+            width: 100%;
+        }
+    }
+
+    &__right {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media (max-width: $breakpoint-md) {
+            width: 100%;
+        }
+    }
+
+    &__main-title {
+        font-size: 77px;
+        color: $white;
+        font-weight: 600;
+        line-height: 1.09;
+        text-align: left;
+        margin-bottom: 0;
+
+        @media (max-width: $breakpoint-lg) {
+            font-size: 60px;
+        }
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 42px;
+            text-align: center;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 36px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 47px;
+        color: $white;
+        font-weight: 600;
+        line-height: 1.4;
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 16px;
+        }
+    }
+
+    &__tasks-block {
+        background: $white;
+        border-radius: 50px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        @media (max-width: $breakpoint-md) {
+            padding: 30px;
+            border-radius: 30px;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            padding: 20px;
+            border-radius: 20px;
+            gap: 20px;
+        }
+    }
+
+    &__task-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $breakpoint-sm) {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+    }
+
+    &__task-name {
+        font-size: 30px;
+        font-weight: 600;
+        color: $primary-color;
+
+        @media (max-width: $breakpoint-lg) {
+            font-size: 24px;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 20px;
+        }
+    }
+
+    &__counter {
+        display: flex;
+        align-items: center;
+        background: $white;
+        border: 2px solid $primary-color;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 60px;
+    }
+
+    &__counter-btn {
+        width: 50px;
+        height: 100%;
+        border: none;
+        background: $white;
+        font-size: 24px;
+        font-weight: 600;
+        color: $primary-color;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: $primary-color;
+            color: $white;
+        }
+
+        &--minus {
+            border-right: 1px solid $primary-color;
+        }
+
+        &--plus {
+            border-left: 1px solid $primary-color;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            width: 45px;
+            font-size: 20px;
+        }
+    }
+
+    &__counter-value {
+        width: 60px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 600;
+        color: $text-dark;
+        background: $white;
+
+        @media (max-width: $breakpoint-sm) {
+            width: 50px;
+            font-size: 18px;
+        }
+    }
+
+    &__variants-title {
+        font-size: 77px;
+        color: $white;
+        font-weight: 600;
+        line-height: 1.09;
+        text-align: left;
+        margin-bottom: 20px;
+
+        @media (max-width: $breakpoint-lg) {
+            font-size: 60px;
+        }
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 42px;
+            text-align: center;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 36px;
+        }
+    }
+
+    &__variants-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__variant-btn {
+        padding: 15px 25px;
+        border: 1px solid $white;
+        border-radius: 20px;
+        background: transparent;
+        color: $white;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: center;
+
+        &:hover {
+            background: $white;
+            color: $primary-color;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            padding: 12px 20px;
+            font-size: 16px;
+        }
+    }
+
+    &__btn_generate{
+        border-radius: 25px;
+        background: $white;
+        max-width: 300px;
+        color: #04051F;
+        padding: 25px 19px;
+        cursor: pointer;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        &:hover{
+            background: #2849F3;
+        }
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        min-height: 800px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        min-height: 700px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        min-height: 600px;
+    }
+}

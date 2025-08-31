@@ -1,0 +1,41 @@
+.button__btn {
+    background: $white;
+    color: #2849F3;
+    border: 1px solid #2849F3;
+    padding: 1rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba($primary-color, 0.3);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 160px;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: url('/images/svg/line.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.3s ease;
+        position: relative;
+        top: 0.125rem; 
+    }
+
+    &:hover {
+        background: darken($primary-color, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba($primary-color, 0.4);
+        
+        &::after {
+            transform: translateX(0.25rem);
+        }
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovmatch - Вариант №1</title>
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" id="nav-toggle" class="nav__checkbox">
+        
+        <div class="container">
+            <nav class="nav">
+
+                <a href="/index.html" class="nav__logo">
+                    <img src="images/svg/main_icon.svg" alt="Sovmatch" class="nav__logo-icon">
+                </a>
+
+                <ul class="nav__menu">
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/about.html">О преподавателе</a></li>
+                    <li><a href="/constructor.html">Конструктор вариантов</a></li>
+                    <li><a href="/account.html">Акаунт</a></li>
+                    <li><a href="/reviews.html">Отзывы</a></li>
+                </ul>
+
+                <div class="nav__btn-block">
+                    <button class="nav__btn nav__btn--login">Вход</button>
+                    <button class="nav__btn nav__btn--registration">Регистрация</button>
+                </div>
+
+                <label for="nav-toggle" class="nav__burger">
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                </label>
+            </nav>
+        </div>
+
+        <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/about.html">О преподавателе</a></li>
+                <li><a href="/constructor.html">Конструктор вариантов</a></li>
+                <li><a href="/account.html">Контакты</a></li>
+                <li><a href="/reviews.html">Отзывы</a></li>
+            </ul>
+            <div class="mobile-menu__buttons">
+                <button class="nav__btn nav__btn--login">Вход</button>
+                <button class="nav__btn nav__btn--registration">Регистрация</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="option" class="option">
+        <!-- Слой 1 Фон с переопределенным градиентом -->
+        <div class="option__bg"></div>
+        
+        <!-- Слой 3 Контент -->
+        <div class="option_container">
+            <div class="option__top-content">
+
+                <div class="option__header">
+                    <h1 class="option__main-title">Готовый вариант №1</h1>
+                    <img src="/images/webp/copy_element.webp" alt="Копировать" class="option__copy-icon">
+                </div>
+                
+                <p class="option__part">1 часть</p>
+            </div>
+
+            <div class="option__task-block">
+                <h3 class="option__task-title">Задание №1</h3>
+                <p class="option__task-text">
+                    Книга стоит 15 рублей. В пятницу в книжном магазине действует специальное предложение: заплатив за три книги, покупатель получает пять (две в подарок). Сколько книг можно получить на 90 рублей в пятницу?
+                </p>
+                <input type="text" class="option__answer-input" placeholder="Введите ответ">
+            </div>
+
+            <div class="option__task-block">
+                <h3 class="option__task-title">Задание №2</h3>
+                <p class="option__task-text">
+                    Книга стоит 15 рублей. В пятницу в книжном магазине действует специальное предложение: заплатив за три книги, покупатель получает пять (две в подарок). Сколько книг можно получить на 90 рублей в пятницу?
+                </p>
+                <input type="text" class="option__answer-input" placeholder="Введите ответ">
+            </div>
+
+
+            <div class="option__top-content">
+                
+                <p class="option__part">2 часть</p>
+            </div>
+
+            <div class="option__task-block">
+                <h3 class="option__task-title">Задание №1</h3>
+                <p class="option__task-text">
+                    Книга стоит 15 рублей. В пятницу в книжном магазине действует специальное предложение: заплатив за три книги, покупатель получает пять (две в подарок). Сколько книг можно получить на 90 рублей в пятницу?
+                </p>
+                <input type="text" class="option__answer-input" placeholder="Введите ответ">
+            </div>
+
+            <div class="constructor__btn_generate">Проверить</div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
